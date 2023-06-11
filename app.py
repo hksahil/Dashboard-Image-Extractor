@@ -3,6 +3,9 @@ import zipfile
 import os
 import shutil
 
+st.set_page_config(page_title='Image Extractor',page_icon=':smile:')
+
+
 # --------- Removing Streamlit's Hamburger and Footer starts ---------
 hide_st_style = """
             <style>
@@ -15,9 +18,6 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 # --------- Removing Streamlit's Hamburger and Footer ends ------------
-
-st.set_page_config(page_title='Image Extractor',page_icon=':smile:')
-
 
 def download_images_from_zip(zip_file_path, output_directory):
     # Create a new zip file
